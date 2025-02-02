@@ -1,0 +1,20 @@
+package request.commands;
+
+public enum ManagerCommands {
+    GET_USER_INFO,
+    CHANGE_PERSONAL_DATA,
+
+    GET_PRODUCT_LIST,
+    GET_CATEGORY_LIST,
+    UPDATE_PRODUCT,
+    DELETE_PRODUCT,
+    ADD_PRODUCT,
+    ADD_CATEGORY,
+    DELETE_CATEGORY,
+
+    GET_ORDER_LIST,
+    CHANGE_ORDER_STATUS,
+    GET_ORDER_ELEMENTS,
+
+    LOGOUT
+}

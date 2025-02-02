@@ -1,0 +1,20 @@
+package request.commands;
+
+public enum UserCommands {
+    GET_USER_INFO,
+    GET_PRODUCT_LIST,
+    GET_CATEGORY_LIST,
+    CHANGE_PERSONAL_DATA,
+
+    GET_CART,
+    ADD_CART_ELEMENT,
+    CLEAR_CART,
+    REMOVE_CART_ELEMENT,
+    CART_ELEMENT_CHANGE_AMOUNT,
+
+    CREATE_ORDER,
+    GET_USER_ORDER_LIST,
+    GET_ORDER_ELEMENTS,
+
+    LOGOUT
+}

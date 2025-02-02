@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0" style="-fx-background-color: #388E3C; -fx-border-color: #388E3C; -fx-border-width: 1; -fx-border-radius: 10;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.UpdProduct">
+    <children>
+        <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="520.0" prefWidth="940.0" style="-fx-background-color: #E8F5E9; -fx-border-radius: 8; -fx-background-radius: 8;">
+            <children>
+                <Label layoutX="280.0" layoutY="14.0" style="-fx-font-size: 30px; -fx-font-weight: bold;" text="РЕДАКТИРОВАНИЕ ТОВАРА" textFill="#1B5E20" />
+
+                <VBox alignment="CENTER" layoutX="50.0" layoutY="80.0" prefHeight="328.0" prefWidth="350.0" spacing="15" style="-fx-background-color: #C8E6C9; -fx-padding: 20; -fx-border-radius: 10; -fx-background-radius: 10; -fx-border-color: #388E3C; -fx-border-width: 2;">
+                    <Label style="-fx-font-size: 15px;" text="Название товара" />
+                    <TextField fx:id="textFieldName" style="-fx-font-size: 14px; -fx-pref-width: 300px; -fx-background-radius: 10;" />
+                    <Label style="-fx-font-size: 15px;" text="Модель" />
+                    <TextField fx:id="textFieldModel" style="-fx-font-size: 14px; -fx-pref-width: 300px; -fx-background-radius: 10;" />
+                    <Label style="-fx-font-size: 15px;" text="Бренд" />
+                    <TextField fx:id="textFieldBrand" style="-fx-font-size: 14px; -fx-pref-width: 300px; -fx-background-radius: 10;" />
+                    <Label style="-fx-font-size: 15px;" text="Цена" />
+                    <TextField fx:id="textFieldPrice" style="-fx-font-size: 14px; -fx-pref-width: 300px; -fx-background-radius: 10;" />
+                </VBox>
+
+                <VBox alignment="CENTER" layoutX="500.0" layoutY="80.0" prefHeight="200.0" prefWidth="350.0" spacing="15" style="-fx-background-color: #C8E6C9; -fx-padding: 20; -fx-border-radius: 10; -fx-background-radius: 10; -fx-border-color: #388E3C; -fx-border-width: 2;">
+                    <Label style="-fx-font-size: 15px;" text="Количество" />
+                    <TextField fx:id="textFieldAmount" style="-fx-font-size: 14px; -fx-pref-width: 300px; -fx-background-radius: 10;" />
+                    <Label style="-fx-font-size: 15px;" text="Категория" />
+                    <ComboBox fx:id="comboBoxCategory" style="-fx-font-size: 14px; -fx-pref-width: 300px; -fx-background-radius: 10;" />
+                </VBox>
+
+                <Button fx:id="buttonBack" layoutX="125.0" layoutY="450.0" mnemonicParsing="false" onAction="#onClickBack" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #AFB42B; -fx-text-fill: white; -fx-border-radius: 5; -fx-background-radius: 5;" text="Вернуться">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Button>
+                <Button fx:id="buttonSubmit" layoutX="575.0" layoutY="450.0" mnemonicParsing="false" onAction="#onClickSubmit" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #388E3C; -fx-text-fill: white; -fx-border-radius: 5; -fx-background-radius: 5;" text="Редактировать товар">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

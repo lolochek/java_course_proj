@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0" style="-fx-background-color: #388E3C; -fx-border-color: #388E3C; -fx-border-width: 1; -fx-border-radius: 10;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.UserInfo">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="520.0" prefWidth="940.0" style="-fx-background-color: #E8F5E9; -fx-border-radius: 8; -fx-background-radius: 8;">
+         <children>
+            <Label layoutX="400.0" layoutY="20.0" style="-fx-font-size: 30px; -fx-font-weight: bold;" text="ЛИЧНЫЙ КАБИНЕТ" textFill="#1B5E20" />
+
+            <VBox fx:id="profileBox" layoutX="320.0" layoutY="80.0" prefHeight="322.0" prefWidth="528.0" spacing="10" style="-fx-background-color: #A5D6A7; -fx-padding: 20; -fx-border-radius: 10; -fx-background-radius: 10; -fx-border-color: #388E3C; -fx-border-width: 2;">
+               <Label fx:id="labelLogin" style="-fx-font-size: 15px;" text="Логин" textFill="#1B5E20">
+                  <font>
+                     <Font size="15.0" />
+                  </font>
+               </Label>
+               <Label fx:id="labelName" style="-fx-font-size: 15px;" text="Имя" textFill="#1B5E20">
+                  <font>
+                     <Font size="15.0" />
+                  </font>
+               </Label>
+               <Label fx:id="labelSurname" style="-fx-font-size: 15px;" text="Фамилия" textFill="#1B5E20">
+                  <font>
+                     <Font size="15.0" />
+                  </font>
+               </Label>
+               <Label fx:id="labelEmail" style="-fx-font-size: 15px;" text="Почта" textFill="#1B5E20">
+                  <font>
+                     <Font size="15.0" />
+                  </font>
+               </Label>
+               <Label fx:id="labelPhone" style="-fx-font-size: 15px;" text="Номер телефона" textFill="#1B5E20">
+                  <font>
+                     <Font size="15.0" />
+                  </font>
+               </Label>
+               <Label fx:id="labelRole" style="-fx-font-size: 15px;" text="Роль: Пользователь" textFill="#1B5E20">
+                  <font>
+                     <Font size="15.0" />
+                  </font>
+               </Label>
+               <Label fx:id="labelCreatedAt" style="-fx-font-size: 15px;" text="Аккаунт создан" textFill="#1B5E20">
+                  <font>
+                     <Font size="15.0" />
+                  </font>
+               </Label>
+            </VBox>
+            <Button fx:id="buttonSubmit1" layoutX="560.0" layoutY="428.0" mnemonicParsing="false" onAction="#delAccount" prefHeight="31.0" prefWidth="199.0" style="-fx-background-color: #F44336; -fx-text-fill: white; -fx-border-radius: 5; -fx-background-radius: 5;" text="Удалить аккаунт">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Label fx:id="labelMessage" layoutX="391.0" layoutY="471.0" text="Редактирование" visible="false" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnUpdateProfile" layoutX="347.0" layoutY="438.0" mnemonicParsing="false" onAction="#UpdateProfile" prefHeight="31.0" prefWidth="199.0" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-border-radius: 5; -fx-background-radius: 5;" text="Редактировать профиль">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <VBox layoutX="40.0" layoutY="90.0" prefHeight="400.0" prefWidth="250.0" spacing="15" style="-fx-background-color: #C8E6C9; -fx-padding: 20; -fx-border-radius: 10; -fx-background-radius: 10; -fx-border-color: #388E3C; -fx-border-width: 2;">
+         <children>
+            <Button fx:id="btnShowStore" mnemonicParsing="false" onAction="#ShowStore" prefHeight="31.0" prefWidth="200.0" style="-fx-background-color: #388E3C; -fx-text-fill: white; -fx-border-radius: 5; -fx-background-radius: 5;" text="Магазин">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnShowCart" mnemonicParsing="false" onAction="#ShowCart" prefHeight="31.0" prefWidth="200.0" style="-fx-background-color: #689F38; -fx-text-fill: white; -fx-border-radius: 5; -fx-background-radius: 5;" text="Корзина">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnShowOrders" mnemonicParsing="false" onAction="#ShowOrders" prefHeight="31.0" prefWidth="200.0" style="-fx-background-color: #558B2F; -fx-text-fill: white; -fx-border-radius: 5; -fx-background-radius: 5;" text="Заказы">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnLogout" mnemonicParsing="false" onAction="#Logout" prefHeight="31.0" prefWidth="200.0" style="-fx-background-color: #AFB42B; -fx-text-fill: white; -fx-border-radius: 5; -fx-background-radius: 5;" text="Выйти">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
